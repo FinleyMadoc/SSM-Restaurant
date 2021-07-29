@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: montserrat, serif;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: #34495e;
+}
+
+label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 88px;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border:1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    border: 1px solid white;
+    transition: .5s;
+}
+nav #icon{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+i.fa-bars span{
+    position: absolute;
+    display: inline-block;
+    background: white;
+    width: 20px;
+    height: 1px;
+}
+i.fa-bars span:nth-child(1){
+    top: 33px;
+}
+i.fa-bars span:nth-child(2){
+    top: 40px;
+}
+i.fa-bars span:nth-child(3){
+    top: 47px;
+}
+@media (max-width: 1048px) {
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+}
+@media (max-width: 909px) {
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        border: none;
+        color: #3498db;
+    }
+    nav ul.show{
+        left: 0;
+
+    }
+}
+section{
+    background: url(../image/back01.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.bc2{
+    background: url(../image/back02.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.bc3{
+    background: url(../image/back03.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.bc4{
+    background: url(../image/back04.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.bc5{
+    background: url(../image/back05.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+
+/*Menu.jsp位置购买按钮样式*/
+/* 按钮 购买 */
+.fileinput-button {
+    position: relative;
+    display: inline-block;
+    background: rgba(105, 105, 105, 0.7); /* 背景色、透明度 */
+    border: 1px solid rgba(23, 23, 23, 0.4); /* 鼠标悬浮时，边框样式 */
+    border-radius: 20px; /* 圆角半径 */
+    padding: 1px 30px; /* 边距：高度、宽度 */
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+.dt-input {
+    padding: 10px 9px;
+    float: right;
+    border-radius: 10px 5px 10px 5px;
+}
+
+
+
+
